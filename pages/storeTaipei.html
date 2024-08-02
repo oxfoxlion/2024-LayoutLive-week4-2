@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="store container paddingGroup">
+      <h3 class="title-h3">門市據點</h3>
+      <form action="store.html">
+        <label for="area">選擇分店</label>
+        <select name="area" id="area">
+          <option value="Zhongshan ">台北中山旗艦店</option>
+          <option value="GreenGarden">台北綠園店</option>
+          <option value="Qingshui">台中清水旗艦店</option>
+          <option value="Zhongzheng">高雄中正形象店</option>
+          <option value="Kaohsiung">高雄夢時代店</option>
+        </select>
+      </form>
+      
+      <div class="store-info">
+        <div class="store-intro">
+          <img src="/assets/images/store-1.png" alt="store-1">
+          <div class="store-intro-text">
+            <h5>台北中山旗艦店</h5>
+            <div class="storeList-info">
+              <p> <span class="material-symbols-outlined">call</span>電話：(02)000-1234</p>
+              <p><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+              <p><span class="material-symbols-outlined">location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
+            </div>
+          </div>
+        </div>
+        <div class="store-map">
+          <img src="/assets/images/Web/螢幕快照 2020-02-13 16.35.44/螢幕快照.png" alt="map">
+        </div>
+      </div>
+
+
+      
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

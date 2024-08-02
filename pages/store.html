@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="store container paddingGroup">
+      <h3 class="title-h3">門市據點</h3>
+      <form action="store.html">
+        <label for="area">選擇地區</label>
+        <select name="area" id="area">
+          <option value="Taipei">台北市</option>
+          <option value="Kaohsiung">高雄市</option>
+          <option value="Taichung">台中市</option>
+        </select>
+      </form>
+      <ul class="storeList">
+        <li>
+          <img src="/assets/images/store-1.png" alt="store-1">
+          <h5>台北中山旗艦店</h5>
+          <div class="storeList-info">
+            <p> <span class="material-symbols-outlined">call</span>電話：(02)000-1234</p>
+            <p><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
+          </div>
+          <a href="storeTaipei.html">詳細資訊</a>
+        </li>
+        <li>
+          <img src="/assets/images/store-2.png" alt="store-2">
+          <h5>台北綠園店</h5>
+          <div class="storeList-info">
+            <p> <span class="material-symbols-outlined">call</span>電話：(02)000-2345</p>
+            <p><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">location_on</span>地址：台北市中正區復興南路 132-1 號</p>
+          </div>
+          <a href="storeTaipei.html">詳細資訊</a>
+        </li>
+        <li>
+          <img src="/assets/images/store-3.png" alt="store-3">
+          <h5>台中清水旗艦店</h5>
+          <div class="storeList-info">
+            <p> <span class="material-symbols-outlined">call</span>電話：(02)000-1234</p>
+            <p><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">location_on</span>地址：台中市清水區經南一路 23 號 8 樓</p>
+          </div>
+          <a href="storeTaipei.html">詳細資訊</a>
+        </li>
+        <li>
+          <img src="/assets/images/store-4.png" alt="store-4">
+          <h5>高雄中正形象店</h5>
+          <div class="storeList-info">
+            <p> <span class="material-symbols-outlined">call</span>電話：(02)000-2345</p>
+            <p><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">location_on</span>地址：高雄市苓雅區中正路 38 號 12 樓</p>
+          </div>
+          <a href="storeTaipei.html">詳細資訊</a>
+        </li>
+        <li>
+          <img src="/assets/images/store-5.png" alt="store-5">
+          <h5>高雄夢時代店</h5>
+          <div class="storeList-info">
+            <p> <span class="material-symbols-outlined">call</span>電話：(02)000-1234</p>
+            <p><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">location_on</span>地地址：高雄市前鎮區中華一路 63 號 6 樓</p>
+          </div>
+          <a href="storeTaipei.html">詳細資訊</a>
+        </li>
+      </ul>
+      
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

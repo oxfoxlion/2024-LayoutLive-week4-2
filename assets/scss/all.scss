@@ -1,0 +1,13 @@
+@import './helper/variables';
+@import './base/reset.scss';
+
+@import './layout/universal.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import './pages/questions';
+@import './pages/product.scss';
+@import './pages/store';
+@import './pages/blog';

@@ -1,0 +1,28 @@
+.questions{
+    h4{
+        margin-bottom: 24px;
+    }
+
+    h5{
+        font-size: $fz-8;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    p{
+        font-size: $fz-11;
+    }
+
+    li{
+        margin-bottom: 32px;
+    }
+}
+
+
+@media (max-width:710px) {
+
+    li{
+        margin-bottom: 24px;
+    }
+    
+}

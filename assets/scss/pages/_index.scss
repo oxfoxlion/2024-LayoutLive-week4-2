@@ -1,0 +1,338 @@
+.bg-img-header{
+	background-image: url(/assets/images/home-header.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.specialRecommendation{
+	padding-top: 296px;
+	padding-bottom: 296px;
+	text-align: end;
+
+	h4{
+		font-size: $fz-5;
+	}
+}
+
+.button{
+	display: inline-block;
+	background-color: $colorPrimary;
+	color: $colorWhite;
+	font-size: $fz-8;
+	padding: 6px 12px;
+	&:hover{
+		background-color: $colorSecondary;
+	}
+}
+
+/* servers */
+
+.servers{
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	&-items{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 24px;
+	}
+
+	&-item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img{
+			margin-bottom: 16px;
+		}
+
+		h4{
+			margin-bottom: 8px;
+		}
+	}
+
+	h3{
+		margin-bottom: 24px;
+	}
+}
+
+/* classic */
+
+.classic{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+
+	&-items{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 24px;
+	}
+
+	&-item img{
+		margin-bottom: 8px;
+	}
+}
+
+/* coBranded */
+
+.bg-index{
+	background: url(/assets/images/index-bg.png) no-repeat;
+	box-sizing: calc(100vw);
+	background-position: center center;
+	background-size: cover;
+}
+
+.coBranded{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+
+	&-items{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* customerRecommend */
+.customerRecommend{
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	&-items{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap:24px;
+	}
+
+	&-item{
+		border: 1px solid #DEE2E6;
+		border-radius: 4px;
+		box-shadow: 0 2px 6px #00000029;
+	}
+}
+
+.customer{
+	text-align: left;
+	height: calc(25vh);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 16px;
+
+	.customer-content{
+		h6{
+			font-size: $fz-11;
+			font-weight: $fw-medium;
+			margin-bottom: 8px;
+		}
+
+		p{
+			font-size: $fz-11;
+		}
+
+	} 
+}
+
+.date{
+	font-size: $fz-12;
+	color: $colorGrayLight;
+}
+
+/* contact */
+.contact{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+
+	&-form{
+		width: 50%;
+		margin: 0 auto;
+		text-align: left;
+
+		p{
+			font-size: $fz-8;
+			margin-bottom: 24px;
+		}
+
+		label{
+			margin-bottom: 8px;
+			font-size: $fz-11;
+		}
+
+		textarea{
+			height: calc(12vh);
+		}
+	}
+}
+
+.inputBox{
+	width: 100%;
+	margin-bottom: 16px;
+	font-size: $fz-11;
+	padding: 6px 12px;
+	background-color: $colorLight;
+
+	input{
+		border: $colorBlack 1px solid;
+		
+	}
+
+	&-agree{
+		margin-bottom: 48px;
+	}
+
+	&-submit{
+		width: 100%;
+		text-align: center;
+		input{
+			text-align: center;
+			border:0;
+			padding: 16px 13.5%;
+			font-weight: bold;
+	
+			&:hover{
+				background-color: $colorSecondary;
+			}
+		}
+	}
+	
+	
+}
+
+@media (max-width:1300px) {
+
+	.servers-items{
+		flex-wrap: wrap;
+	}
+	.servers-item{
+		width: 45%;
+	}
+
+	.customerRecommend-items{
+		flex-wrap: wrap;
+	}
+
+	.customerRecommend-item{
+		width: 45%;
+	}
+	
+}
+
+@media (max-width:1060px) {
+	.classic-items{
+		flex-direction: column;
+	}
+	
+	.classic-item{
+		width: 43.75%;
+	}
+}
+
+@media (max-width:800px) {
+
+	.bg-img-header{
+		background-image: url(/assets/images/home-header-sm.png);
+		background-position: center center;
+		background-size: cover;
+	}
+
+	.bg-index{
+		background: url(/assets/images/index-bg-sm.png) no-repeat;
+	}
+
+	.coBranded-items{
+		flex-direction: column;
+		gap:24px;
+	}
+
+	.contact-form{
+		width: 75%;
+	}
+}
+
+@media (max-width:710px) {
+
+	// .pc{
+	// 	display: none;
+	// }
+
+	.specialRecommendation{
+		padding: 144px 0;
+
+		h4{
+			font-size: $fz-11;
+		}
+	}
+	
+	.servers{
+		padding: 40px 0;
+
+		&-item{
+			width: 100%;
+	
+			p{
+				font-size: $fz-11;
+			}
+		}
+	}
+	.classic{
+		padding: 40px 0;
+
+		&-item{
+			width: 100%;
+		}
+	}
+
+	.bg-index{
+		background: url(/assets/images/index-bg-md.png) no-repeat;
+	}
+	.coBranded{
+		padding: 40px 0;
+	}
+	
+
+	.customerRecommend{
+		padding: 40px 0;
+
+		&-item{
+			width: 100%;
+		}
+
+		&-items{
+			gap:16px;
+		}
+	}
+
+	.contact{
+		padding: 40px 0;
+
+		&-form{
+			width: 100%;
+
+			p{
+				font-size: $fz-11;
+			}
+
+			textarea{
+				height: calc(16vh);
+			}
+		}
+	}
+
+
+	.inputBox-submit input{
+		width: 100%;
+	}
+
+	.inputBox-agree{
+		margin-bottom: 24px;
+	}
+}

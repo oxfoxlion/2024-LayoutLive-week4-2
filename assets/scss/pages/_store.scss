@@ -1,0 +1,197 @@
+.store{
+
+    label{
+        font-size: $fz-7;
+        padding-right: 16px;
+    }
+
+    select{
+        font-size: $fz-10;
+        color:$colorGray;
+        padding: 6px 12px;
+        text-align: start;
+        width:23% ;
+    }
+
+    form{
+        margin-bottom: 41px;
+    }
+}
+
+.storeList{
+    display: flex;
+    justify-content: start;
+    gap: 2%;
+    flex-wrap: wrap;
+
+    li{
+        width: 32%;
+        margin-bottom: 48px;
+    }
+
+    h5{
+        font-size: $fz-7;
+        padding: 8px 24px;
+        text-align: start;
+        border: $colorBlack 1px solid;
+    }
+
+    &-info{
+        padding: 16px 26px;
+        border: $colorBlack 1px solid;
+        text-align: start;
+
+        p{
+            display: flex;
+            justify-self: start;
+            align-items: start;
+            gap: 8px;
+            font-size: $fz-8;
+            margin-bottom: 8px;
+        }
+
+        span{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    a{
+        display: block;
+        color: $colorWhite;
+        border: $colorBlack 1px solid;
+        background-color: $colorBlack;
+        padding: 16px 0;
+        width: 100%;
+        font-size: $fz-9;
+        text-align: center;
+        &:hover{
+            background-color: gray;
+        }
+    }
+}
+
+.store-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    .store-intro{
+        width: 40%;
+
+        h5{
+            font-size: $fz-7;
+            padding: 8px 12px;
+            text-align: start;
+            border: $colorBlack 1px solid;
+        }
+    }
+
+    .store-map{
+        width: 57%;
+    }
+}
+
+
+
+@media (max-width:1060px) {
+    .store{
+
+        select{
+            width:43% ;
+        }
+    }
+
+    .storeList{
+    
+        gap:4%;
+        li{
+            width: 48%;
+            margin-bottom: 24px;
+        }
+
+        &-info{
+            span{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    
+    }
+    
+}
+
+@media (max-width:800px) {
+
+    .store{
+        label{
+            font-size: $fz-11;
+            padding-right: 8px;
+        }
+    }
+    .storeList{
+    
+        gap:0;
+        li{
+            width:100%;
+        }
+    }
+
+
+    .store-info{
+        flex-direction: column;
+        gap:24px;
+    
+        .store-intro{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            img{
+                width: 48%;
+            }
+
+            .store-intro-text{
+                width: 48%;
+            }
+        }
+    
+        .store-map{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:710px){
+    .store{
+
+        label{
+            font-size: $fz-11;
+            padding-right: 8px;
+        }
+    
+        select{
+            width:70% ;
+        }
+    
+        form{
+            margin-bottom: 41px;
+        }
+    }
+
+    .store-info{
+        .store-intro{
+            flex-direction: column;
+            justify-content: start;
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+
+            .store-intro-text{
+                width: 100%;
+            }
+        }
+    }
+}
